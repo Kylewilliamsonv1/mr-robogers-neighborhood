@@ -1,5 +1,6 @@
-$(document).ready(funciton() {
-  $("formOne").submit(function(event) {
+$(document).ready(function() {
+  $("#game").submit(function(event) {
+    event.preventDefault();
     const numberArray = [1, 2, 3];
     //const number = 2;
     let number=$("#submission").val()
@@ -14,7 +15,6 @@ $(document).ready(funciton() {
           return "Won't you be me neighbor!";
         }
       }
-    }
-  }
-}
-inputBeep(number, numberArray);
+    };
+  });
+});
