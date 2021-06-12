@@ -18,3 +18,9 @@ Test: If inputNumber is equal to 3 return "Won't you be me neighbor!"
 Code:
 inputNumber===3;return "Won't you be me neighbor!"
 Expected Output: 1
+
+
+
+//put input # into an array and then call it into the loop.
+//     inputNumber.forEach(function(element) {
+//       numberArray.push(element *1);
