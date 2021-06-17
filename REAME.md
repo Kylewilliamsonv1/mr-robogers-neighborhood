@@ -24,3 +24,22 @@ Expected Output: 1
 //put input # into an array and then call it into the loop.
 //     inputNumber.forEach(function(element) {
 //       numberArray.push(element *1);
+
+
+   //   console.log("Looped!")
+    // function arrayBuilder(userInput, numberArray) {
+    //   for (let i = 0; i < numberArray.length; i ++) {
+    //     if (i.tostring().includes("1")) {
+    //       return numberArray.push(i) // [1,2,3]
+    //     };
+    //     console.log("looped")
+    //   }
+    //   return false;
+    // }
+    //     number.push(conditionsArray[i]*1);
+    // arrayBuilder(number, conditionsArray)
+    //     // number.push(conditionsArray[i]*1)
+
+
+
+
