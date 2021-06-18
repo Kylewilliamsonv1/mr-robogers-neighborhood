@@ -1,5 +1,8 @@
-// This works
-let input = "16"
+//User Interface Logic
+$(document).ready(function() {
+  $("#game").submit(function(event) {
+    event.preventDefault();
+let input = $("#numberInput").val();
 if (input.toString().includes(3)) {
   input= "Won't you be me neighbor!"
 } else if (input.toString().includes(2) && !input.toString().includes(3)) {
@@ -9,7 +12,7 @@ if (input.toString().includes(3)) {
 } else {
   input
 }
-
+console.log(input);
 
 
 
@@ -49,7 +52,7 @@ if (input.toString().includes(3)) {
 
 
 
-      //user interface Logic______________________________________
-// $(document).ready(function() {
-//   $("#game").submit(function(event) {
-//     event.preventDefault();
+// user interface Logic______________________________________
+
+  });
+});
