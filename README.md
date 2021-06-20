@@ -1,62 +1,79 @@
-#### _{Brief description of application}_
+#### _The Robotic language Synthesizer_
 
-#### By _**{List of contributors}**_
+#### By _**Kyle Willimaosn**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _Javascript_
+* _jQuery_
+* _Bootstap_
+* _HTML_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This application will take in integers and output an array that replaces integers 1, 2, 3.  This is a basic application that demonstrates my ability to utilize a for loop_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone repository from github.com_
+* _Open folder titled 'mr-robogers-neighborhood'_
+* _Open index.html file_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+_To run this application on their local station the user will need to first clone the repository from github.com.  Once the file is accessible, the user will need to open the folder up and access the html file which will then begin the program._
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Results button must be clicked twice to populate return_
+
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Contact Information
 
-_{Add your contact information here.}_ 
-
-Describe: getInput()
-Objective: Gathers inpout from form. 
-Test: Function should return inputted number
-Code: number=$("#numberInput").val();
-Expected Output: number 
-
-
+_{kylewilliamsonv1@gmail.com}_ 
 
 Describe: roboLanguage()
-Objective: Numbers that contain a 1; replace all digits with "Beep!"
 
-Test: If inputNumber is equal to 1 return "Beep!"
+Test: This function will take in a variable when called and send it through a forLoop returning an array 
 Code: 
-inputNumber===1;return "Beep!"
-Expected Output: 1
+function roboLanguage (input) {}
+  for (let i = 0; i <= input; i ++) {}
+Expected Output:[]
 
-Objective: Numbers that contain a 2; replace all digits with "Boop!"
+Test:
+If input includes a 3 return "Won't you be me neighbor!"
+Code: 
+.includes(3); 
+return "Won't you be me neighbor!"
+Expected Output: string
 
-Test: If inputNumber is equal to 2 return "Boop!"
-Code:
-inputNumber===2;return "Boop!"
-Expected Output: 1
+Test: If input includes a 2 return "Boop!"
+Code: 
+.includes(2);
+Expected Output: string
 
-Objective: Numbers that contain a 3; replace all digits with "Won't you be me neighbor!"
+Test: If input includes a 1 return "Beep!"
+Code: 
+.includes(1);
+Expected Output: string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,8 +20,9 @@ $(document).ready(function() {
   $("#game").submit(function(event) {
     event.preventDefault();
     const input = $("#numberInput").val();
+    result = roboLanguage(input)
     $("button#results").click(function() {
-      $("ul#user").text(roboLanguage(input))
+      $("ul#user").text(result)
     });
   });
 });  
