@@ -15,14 +15,13 @@ function roboLanguage (input) {
   return numberArray;
 }
 
-
 //User Interface Logic_________________________
 $(document).ready(function() {
   $("#game").submit(function(event) {
     event.preventDefault();
     const input = $("#numberInput").val();
-    roboLanguage(input);
-    console.log(input)
-  
+    $("button#results").click(function() {
+      $("ul#user").text(roboLanguage(input))
+    });
   });
 });  

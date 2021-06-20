@@ -36,7 +36,15 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 _{Add your contact information here.}_ 
 
-Describe: inputNumber()
+Describe: getInput()
+Objective: Gathers inpout from form. 
+Test: Function should return inputted number
+Code: number=$("#numberInput").val();
+Expected Output: number 
+
+
+
+Describe: roboLanguage()
 Objective: Numbers that contain a 1; replace all digits with "Beep!"
 
 Test: If inputNumber is equal to 1 return "Beep!"
