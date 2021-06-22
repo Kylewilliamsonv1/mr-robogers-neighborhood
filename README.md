@@ -38,34 +38,35 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 _{kylewilliamsonv1@gmail.com}_ 
 
-Describe: roboLanguage()
+Describe: roboLanguage(8)
 
-Test: This function will take in a variable when called and send it through a forLoop returning an array 
-Code: 
-function roboLanguage (input) {}
-  for (let i = 0; i <= input; i ++) {}
-Expected Output:[]
+Test: It will return an array from 0 to their input number.
+Code: roboLanguage(8)
+Expected Output: [0,1,2,3,4,5,6,7,8]
 
-Test:
-If input includes a 3 return "Won't you be me neighbor!"
-Code: 
-.includes(3); 
-return "Won't you be me neighbor!"
-Expected Output: string
+Test: It will replace numbers with 1 to "Beep!"
+Code: roboLanguage(1)
+Expected Output: [Beep!]
 
-Test: If input includes a 2 return "Boop!"
-Code: 
-.includes(2);
-Expected Output: string
+Test: It will replace numbers with 2 to "Boop!"
+Code: roboLanguage(2)
+Expected Output: [Boop!]
 
-Test: If input includes a 1 return "Beep!"
-Code: 
-.includes(1);
-Expected Output: string
+Test: It will replace numbers with 3 to "Won't you be my neighbor!"
+Code: roboLanguage(3)
+Expected Output: [Won't you be my neighbor!]
 
+Test: It will recognize multiple character strings that include 1 and replace them with "Beep!".
+Code: roboLanguage(10)
+Expected Output: [0, Beep!, Boop!, Won't you be me neighbor!, 4, 5, 6, 7, 8, 9, Beep!]
 
+Test: It will recognize multiple character strings that include 1 and 2 and replace them with "Boop!". 
+Code: roboLanguage(12)
+Expected Output: [0, Beep!, Boop!, Won't you be me neighbor!, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!]
 
-
+Test: It will recognize multiple character strings that include 1, 2, and 3  and replace them with "Won't you be me neighbor!". 
+Code: roboLanguage(13)
+Expected Output: [0, Beep!, Boop!, Won't you be me neighbor!, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be me neighbor!]
 
 
 
