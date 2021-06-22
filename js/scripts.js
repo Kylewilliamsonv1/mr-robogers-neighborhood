@@ -21,8 +21,6 @@ $(document).ready(function() {
     event.preventDefault();
     const input = $("#numberInput").val();
     result = roboLanguage(input)
-    $("button#results").click(function() {
-      $("ul#user").text(result)
-    });
+    $("ul#user").text(result)
   });
 });  
