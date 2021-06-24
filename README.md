@@ -64,7 +64,7 @@ Test: It will recognize multiple character strings that include 1 and 2 and repl
 Code: roboLanguage(12)
 Expected Output: [0, Beep!, Boop!, Won't you be me neighbor!, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!]
 
-Test: It will recognize multiple character strings that include 1, 2, and 3  and replace them with "Won't you be me neighbor!". 
+Test: It will recognize multiple character strings that include 3 and 1 or 2 and replace them with "Won't you be me neighbor!". 
 Code: roboLanguage(13)
 Expected Output: [0, Beep!, Boop!, Won't you be me neighbor!, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be me neighbor!]
 
